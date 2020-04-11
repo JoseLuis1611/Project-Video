@@ -65,9 +65,24 @@ body{
     margin-right: 8px;
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
 .main__title{
     color: white;
     font-size: 25px;
+}
+
+.categories__title{
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    padding-left: 30px;
 }
 
 .input{
@@ -88,7 +103,6 @@ body{
 }
 
 .carousel{
-    width: 100%;
     overflow: scroll;
     padding: 30px;
     position: relative;
@@ -167,7 +181,6 @@ body{
 }
 
 
-
 .carousel-item:hover .carousel-item__details{
     opacity: 1;
 }
@@ -177,7 +190,7 @@ body{
     align-items: center;
     height: 100px;
     width: 100%;
-    background: #AB88FF;
+    background-color: #8f57fd;
 }
 
 .footer a{
@@ -190,4 +203,13 @@ body{
 
 .footer a:hover{
     text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px){
+    
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
