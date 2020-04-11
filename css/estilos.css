@@ -19,7 +19,7 @@ body{
     margin-left: 10px;       
 }
 
-.login{
+.login, .register{
     background: linear-gradient(#21C08B,#AB88FF);
     display: flex;
     align-items: center;
@@ -28,7 +28,7 @@ body{
     min-height: calc(100vh - 200px);
 }
 
-.login__container{
+.login__container, .register__container{
     background-color: rgba(255,255,255,0.1);
     border: 2px solid white;
     border-radius: 40px;
@@ -41,7 +41,7 @@ body{
     justify-content: space-around;
 }
 
-.login__container--form{
+.login__container--form, .register__container--form{
     display: flex;
     flex-direction: column;
 }
@@ -54,7 +54,6 @@ body{
     color: white;
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
 }
 
 .login__container--remember a{
@@ -96,6 +95,21 @@ body{
     text-decoration: underline;
 }
 
+.register__container--sesion{
+    text-align: center;
+}
+
+.register__container--sesion a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Muli', sans-serif;
+}
+
+.register__container--sesion a:hover{
+    text-decoration: underline;
+}
+
 .input{
     background-color: transparent;
     color: white;
@@ -126,7 +140,8 @@ body{
     font-weight: bold;
     font-family: 'Muli', sans-serif;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     outline: none; 
 }
 
