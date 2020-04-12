@@ -19,13 +19,37 @@ body{
     margin-left: 10px;       
 }
 
-.login, .register{
+.login, .register,{
     background: linear-gradient(#21C08B,#AB88FF);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0px 30px;
     min-height: calc(100vh - 200px);
+}
+
+.not-found{
+    background: linear-gradient(#21C08B,#AB88FF);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+
+}
+
+.not-found h1{
+    font-size: 55px;
+    margin: 5px 0px;
+    font-weight: bold;
+}
+
+.not-found h3{
+    font-size: 25px;
+    margin: 5px 0px;
+    font-weight: bold;
 }
 
 .login__container, .register__container{
@@ -164,6 +188,7 @@ body{
 .footer a:hover{
     text-decoration: underline;
 }
+
 
 @media only screen and (max-width: 600px){
     .login__container, .register__container{
