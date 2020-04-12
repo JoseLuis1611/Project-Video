@@ -103,7 +103,7 @@ body{
 }
 
 .carousel{
-    overflow: scroll;
+    overflow: overlay;
     padding: 30px;
     position: relative;
 }
@@ -115,7 +115,6 @@ body{
 }
 
 .carousel-item{
-    background-color: yellow;
     width: 200px;
     height: 250px;
     border-radius: 20px;
@@ -207,24 +206,24 @@ body{
 
 
 ::-webkit-scrollbar-thumb{
-    background: #ccc;
+    background: white;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar{
     width: 8px;
     height: 8px;
-    background: rgba(255,255,255,.4);
+    background: #8f57fd;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar:hover{
-    background: #b3b3b3;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    background: #8f57fd;
+    box-shadow: 0 0 2px 1px #8f57fd;
 }
 
 ::-webkit-scrollbar:hover:active{
-    background: #999;
+    background: #8f57fd;
 }
 
 
@@ -234,4 +233,6 @@ body{
         align-items: flex-start;
         flex-direction: column;
     }
+
+
 }
